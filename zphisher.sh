@@ -55,12 +55,12 @@ fi
 
 ## Script termination
 exit_on_signal_SIGINT() {
-	{ printf "\n\n%s\n\n" "${RED}[${WHITE}!${RED}]${RED} Program Interrupted." 2>&1; reset_color; }
+	{ printf "\n\n%s\n\n" "${RED}[${WHITE}!${RED}]${RED} Programa Interumpido." 2>&1; reset_color; }
 	exit 0
 }
 
 exit_on_signal_SIGTERM() {
-	{ printf "\n\n%s\n\n" "${RED}[${WHITE}!${RED}]${RED} Program Terminated." 2>&1; reset_color; }
+	{ printf "\n\n%s\n\n" "${RED}[${WHITE}!${RED}]${RED} Programa Terminado." 2>&1; reset_color; }
 	exit 0
 }
 
@@ -130,6 +130,17 @@ dependencies() {
 msg_exit() {
 	{ clear; echo; }
 	echo -e "${GREENBG}${BLACK} CICPC UNIDAD DE CIBERSEGURIDAD ${RESETBG}\n"
+	cho -e "\e[1;33m ______________________________________________________________________________________________"
+
+echo " 			              ____ ___ ____ ____   ____" 
+echo " 			             / ___|_ _/ ___|  _ \ / ___|              "
+echo " 			            | |    | | |   | |_) | |                  "
+echo " 			            | |___ | | |___|  __/| |___               "
+echo " 	  		             \____|___\____|_|    \____|            "
+echo "				        Unidad Ciberseguridad"
+
+echo -e "----------------------------------------------------------------------------------------------------"
+	
 	{ reset_color; exit 0; }
 }
 
@@ -332,10 +343,10 @@ custom_url() {
 site_facebook() {
 	cat <<- EOF
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Advanced Voting Poll Login Page
-		${RED}[${WHITE}03${RED}]${ORANGE} Fake Security Login Page
-		${RED}[${WHITE}04${RED}]${ORANGE} Facebook Messenger Login Page
+		${RED}[${WHITE}01${RED}]${ORANGE} Pagina Tradicional Login
+		${RED}[${WHITE}02${RED}]${ORANGE} Página de inicio de sesión de encuesta de votación avanzada
+		${RED}[${WHITE}03${RED}]${ORANGE} Página de inicio de sesión de seguridad falsa
+		${RED}[${WHITE}04${RED}]${ORANGE} Página de inicio de sesión de Facebook Messenger
 
 	EOF
 
@@ -369,10 +380,9 @@ site_instagram() {
 	cat <<- EOF
 
 		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Auto Followers Login Page
-		${RED}[${WHITE}03${RED}]${ORANGE} 1000 Followers Login Page
-		${RED}[${WHITE}04${RED}]${ORANGE} Blue Badge Verify Login Page
-
+		${RED}[${WHITE}02${RED}]${ORANGE} Página de inicio de sesión de seguidores automáticas
+		${RED}[${WHITE}03${RED}]${ORANGE} Página de inicio de sesión de 1000 seguidores
+		${RED}[${WHITE}04${RED}]${ORANGE} Insignia azul Verificar página de inicio de sesión
 	EOF
 
 	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
@@ -404,13 +414,13 @@ site_instagram() {
 site_gmail() {
 	cat <<- EOF
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Gmail Old Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Gmail New Login Page
-		${RED}[${WHITE}03${RED}]${ORANGE} Advanced Voting Poll
+		${RED}[${WHITE}01${RED}]${ORANGE} Página de inicio de sesión antigua de Gmail
+		${RED}[${WHITE}02${RED}]${ORANGE} Nueva página de inicio de sesión de Gmail
+		${RED}[${WHITE}03${RED}]${ORANGE} Encuesta de votación avanzada
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Seleccione una opción : ${BLUE}"
 
 	case $REPLY in 
 		1 | 01)
@@ -435,8 +445,8 @@ site_gmail() {
 site_vk() {
 	cat <<- EOF
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
-		${RED}[${WHITE}02${RED}]${ORANGE} Advanced Voting Poll Login Page
+		${RED}[${WHITE}01${RED}]${ORANGE} Página de inicio de sesión tradicional
+		${RED}[${WHITE}02${RED}]${ORANGE} Página de inicio de sesión de encuesta de votación avanzada
 
 	EOF
 
@@ -463,14 +473,14 @@ main_menu() {
 	cat <<- EOF
 		${RED}[${WHITE}::${RED}]${ORANGE} Seleciona Un Ataque ${RED}[${WHITE}::${RED}]${ORANGE}
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat	    	
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft 	${RED}[${WHITE}25${RED}]${ORANGE} Yahoo	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}08${RED}]${ORANGE} Twitter  	
+		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}09${RED}]${ORANGE} Twitch       
+		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}10${RED}]${ORANGE} Badoo
+		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}11${RED}]${ORANGE} Snapchat	    	
+		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft 	${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	
+		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}13${RED}]${ORANGE} Twitter  	
 		${RED}[${WHITE}06${RED}]${ORANGE} Paypal                  
-	 	${RED}[${WHITE}10${RED}]${ORANGE} Tiktok        
-		${RED}[${WHITE}18${RED}]${ORANGE} Spotify
+	 	${RED}[${WHITE}07${RED}]${ORANGE} Tiktok        
+		${RED}[${WHITE}08${RED}]${ORANGE} Spotify
 		
 		       
 
